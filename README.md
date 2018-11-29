@@ -23,6 +23,15 @@ https://github.com/JoshuaWise/better-sqlite3
 
 If you have trouble installing, check the troubleshooting guide.
 
+
+### Install example electronjs desktop application
+https://github.com/electron/electron-api-demos
+This is a desktop app that interactively and with sample code demonstrates core features of the Electron API. It's built with Electron, too, of course. This app works on Windows, macOS and Linux operating systems.
+
+    .\apicra\electron\install.bat
+    .\apicra\electron\start.bat
+    
+
 ### Usage
 
     const db = require('better-sqlite3')('foobar.db', options);
