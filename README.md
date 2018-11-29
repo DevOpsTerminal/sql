@@ -32,6 +32,13 @@ This is a desktop app that interactively and with sample code demonstrates core 
     .\apicra\electron\start.bat
     
 
+### Install example statement
+https://github.com/lvivier/better-sqlite3-statements
+
+    .\apicra\statement\install.bat
+    .\apicra\statement\start.bat
+    
+    
 ### Usage
 
     const db = require('better-sqlite3')('foobar.db', options);
