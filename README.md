@@ -80,6 +80,66 @@ https://github.com/Kauto/better-sqlite3-helper
         -- Down
         DROP TABLE IF EXISTS `users`;
         
+
+https://loopback.io/doc/en/lb3/SQLite3.html#model-definition-for-sqlite3
+        
+Model definition for SQLite3
+
+The model definition consists of the following properties:
+
+    name: Name of the model, by default, it’s the camel case of the table
+    properties: Property definitions, including default value mapping
+
+
+    {"name": "Inventory", "options": {
+      "idInjection": false,
+    }, "properties": {
+      "id": {
+        "type": "String",
+        "required": false,
+        "length": 64,
+        "precision": null,
+        "scale": null
+      },
+      "productId": {
+        "type": "String",
+        "required": false,
+        "length": 20,
+        "precision": null,
+        "scale": null,
+        "id": 1
+      },
+      "locationId": {
+        "type": "String",
+        "required": false,
+        "length": 20,
+        "precision": null,
+        "scale": null,
+        "id": 1
+      },
+      "available": {
+        "type": "Number",
+        "required": false,
+        "length": null,
+        "precision": 32,
+        "scale": 0
+      },
+      "total": {
+        "type": "Number",
+        "required": false,
+        "length": null,
+        "precision": 32,
+        "scale": 0
+      },
+      "createdOn": {
+       "type": "Date",
+        "required": false,
+        "sqlite3": {
+          "dbDefault": "now"
+        }
+      }
+    }}
+            
 ### Usage
 
     const db = require('better-sqlite3')('foobar.db', options);
